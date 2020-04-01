@@ -2,17 +2,17 @@
 // To customize the pagination style, read Slick's documentation: http://kenwheeler.github.io/slick/
 
 $(document).ready(function(){
+  var prevButton = $('.js-button-prev');
+  var nextButton = $('.js-button-next');
   // Initialize slick
   $('.slick-container').slick({
     infinite: false,
     edgeFriction: 0,
-    prevArrow: $('.button-left'),
-    nextArrow: $('.button-right'),
+    prevArrow: prevButton,
+    nextArrow: nextButton,
     dots: false
   });
 
-  var prevButton = $('.js-button-prev');
-  var nextButton = $('.js-button-next');
   var slideNumber = $('.js-slide')
 
   prevButton.hide();
